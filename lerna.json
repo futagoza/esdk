@@ -1,0 +1,23 @@
+{
+    "lerna": "2.0.0-rc.4",
+    "version": "independent",
+    "packages": [
+        "packages/*",
+        "plugins/*"
+    ],
+    "concurrency": 1,
+    "commands": {
+        "bootstrap": {
+            "hoist": "**"
+        },
+        "publish": {
+            "conventionalCommits": true,
+            "ignore": [
+                "test/**",
+                ".eslint*",
+                ".git*",
+                "*.{html,md}"
+            ]
+        }
+    }
+}
